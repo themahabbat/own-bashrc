@@ -4,6 +4,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias push='git add . && git commit -m "update" && git push -u origin master --force'
 
+ps=ROOTPASSWORD
+
 
 PATH=$PATH:~/.config/composer/vendor/bin
 
@@ -13,6 +15,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # PERMISSIONS
 chall(){
-	echo yelawolf88 | sudo -S echo "sudo access granted"
+	echo ${ps} | sudo -S echo "sudo access granted"
 	sudo chmod ugo+rwx $1 -R
 }
