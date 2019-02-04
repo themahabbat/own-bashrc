@@ -3,6 +3,7 @@ alias ll="ls -alF"
 alias la="ls -A"
 alias l="ls -CF"
 alias push="git add . && git commit -m 'update' && git push -u origin master --force"
+alias del="rm -rf"
 
 alias sync="browser-sync start --server --files"
 alias web="cd 'Desktop/Web-Projects'"
